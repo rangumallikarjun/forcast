@@ -1,0 +1,28 @@
+.container{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ffcc66, #da9c20);
+    --x-pos: 0;
+    --y-angle: calc(var(--x-pos) * 5deg);
+    --y-pos: 0;
+    --x-angle: calc(var(--y-pos) * 5deg);
+    transform:
+        perspective(200px)
+        rotateY(var(--y-angle))
+        rotateX(var(--x-angle));
+}
+
+h1{
+    color: #fff;
+    text-align: right;
+    position: relative;
+    right: 20px;
+    top: 180px;
+}
